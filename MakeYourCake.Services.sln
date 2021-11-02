@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeYourCake.Services.Infrastructure.Build", "MakeYourCake.Services.Infrastructure.Build\MakeYourCake.Services.Infrastructure.Build.csproj", "{128DBFF1-64B2-4708-B682-F104AD2AFBBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CFD9CD47-BD5A-4667-B5E3-B0591BCB39AA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{128DBFF1-64B2-4708-B682-F104AD2AFBBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{128DBFF1-64B2-4708-B682-F104AD2AFBBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{128DBFF1-64B2-4708-B682-F104AD2AFBBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{128DBFF1-64B2-4708-B682-F104AD2AFBBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E9816C7-7DA9-4F51-BB63-E98182A464D4}
+	EndGlobalSection
+EndGlobal

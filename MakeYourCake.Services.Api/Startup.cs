@@ -2,6 +2,7 @@
 // Copyright (c) MumsWhoCode. All rights reserved.
 // -----------------------------------------------------------------------
 
+using MakeYourCake.Services.Api.Brokers.DateTimes;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -17,10 +18,11 @@ namespace MakeYourCake.Services.Api
             Configuration = configuration;
 
         public IConfiguration Configuration { get; }
-        
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddTransient<IDateTimeBroker, DateTimeBroker>();
 
             services.AddSwaggerGen(options =>
             {
@@ -35,7 +37,7 @@ namespace MakeYourCake.Services.Api
                     info: openApiInfo);
             });
         }
-        
+
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

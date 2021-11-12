@@ -2,7 +2,6 @@
 // Copyright (c) MumsWhoCode. All rights reserved.
 // -----------------------------------------------------------------------
 
-using System;
 using Xunit;
 
 namespace MakeYourCake.Services.Tests.Unit
@@ -10,9 +9,7 @@ namespace MakeYourCake.Services.Tests.Unit
     public class DeleteMe
     {
         [Fact]
-        public void DeleteMeTest()
-        {
+        public void DeleteMeTest() =>
             Assert.True(true);
-        }
     }
 }

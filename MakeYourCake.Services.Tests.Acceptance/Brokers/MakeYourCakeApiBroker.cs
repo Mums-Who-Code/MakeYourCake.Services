@@ -20,7 +20,6 @@ namespace MakeYourCake.Services.Tests.Acceptance.Brokers
             this.webApplicationFactory = new WebApplicationFactory<Startup>();
             this.httpClient = this.webApplicationFactory.CreateClient();
             this.apiFactoryClient = new RESTFulApiFactoryClient(this.httpClient);
-
         }
     }
 }

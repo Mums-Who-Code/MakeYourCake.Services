@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeYourCake.Services.Api", "MakeYourCake.Services.Api\MakeYourCake.Services.Api.csproj", "{E88576A4-1EC4-40A7-A400-8CD205BAADD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeYourCake.Services.Tests.Unit", "MakeYourCake.Services.Tests.Unit\MakeYourCake.Services.Tests.Unit.csproj", "{B1213306-6A44-4D07-A865-2E1A4EA31567}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeYourCake.Services.Tests.Unit", "MakeYourCake.Services.Tests.Unit\MakeYourCake.Services.Tests.Unit.csproj", "{B1213306-6A44-4D07-A865-2E1A4EA31567}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeYourCake.Services.Tests.Acceptance", "MakeYourCake.Services.Tests.Acceptance\MakeYourCake.Services.Tests.Acceptance.csproj", "{70ABE510-6D80-49A8-9104-E3AC90B4CD33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B1213306-6A44-4D07-A865-2E1A4EA31567}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1213306-6A44-4D07-A865-2E1A4EA31567}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1213306-6A44-4D07-A865-2E1A4EA31567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70ABE510-6D80-49A8-9104-E3AC90B4CD33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70ABE510-6D80-49A8-9104-E3AC90B4CD33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70ABE510-6D80-49A8-9104-E3AC90B4CD33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70ABE510-6D80-49A8-9104-E3AC90B4CD33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

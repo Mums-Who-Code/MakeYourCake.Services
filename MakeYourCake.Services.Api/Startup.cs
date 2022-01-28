@@ -4,6 +4,7 @@
 
 using MakeYourCake.Services.Api.Brokers.DateTimes;
 using MakeYourCake.Services.Api.Brokers.Loggings;
+using MakeYourCake.Services.Api.Brokers.Storages;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -65,6 +66,7 @@ namespace MakeYourCake.Services.Api
         {
             services.AddTransient<IDateTimeBroker, DateTimeBroker>();
             services.AddTransient<ILoggingBroker, LoggingBroker>();
+            services.AddTransient<IStorageBroker, StorageBroker>();
         }
     }
 }

@@ -348,4 +348,4 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
-/Random.Services.Api/appsettings.Development.json
+/MakeYourCake.Services.Api/appsettings.Development.json

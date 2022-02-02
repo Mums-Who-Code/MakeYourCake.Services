@@ -2,9 +2,9 @@
 // Copyright (c) MumsWhoCode. All rights reserved.
 // -----------------------------------------------------------------------
 
+using System;
 using MakeYourCake.Services.Api.Models.Users;
 using Microsoft.EntityFrameworkCore;
-using System;
 
 namespace MakeYourCake.Services.Api.Brokers.Storages
 {

@@ -16,6 +16,7 @@ namespace MakeYourCake.Services.Api.Models.Users
 
         [JsonIgnore]
         public IEnumerable<Customer> CreatedCustomers { get; set; }
+
         [JsonIgnore]
         public IEnumerable<Customer> UpdatedCustomers { get; set; }
     }

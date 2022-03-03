@@ -15,9 +15,7 @@ namespace MakeYourCake.Services.Api.Services.Foundations.Customers
         public CustomerService(IStorageBroker storageBroker) =>
             this.storageBroker = storageBroker;
 
-        public ValueTask<Customer> AddCustomerAsync(Customer customer)
-        {
-            throw new System.NotImplementedException();
-        }
+        public async ValueTask<Customer> AddCustomerAsync(Customer customer) =>
+            await this.storageBroker.InsertCustomerAsync(customer);
     }
 }

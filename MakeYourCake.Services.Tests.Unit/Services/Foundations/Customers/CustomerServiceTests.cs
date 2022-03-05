@@ -3,6 +3,9 @@
 // -----------------------------------------------------------------------
 
 using System;
+using System.Linq.Expressions;
+using MakeYourCake.Services.Api.Brokers.DateTimes;
+using MakeYourCake.Services.Api.Brokers.Loggings;
 using MakeYourCake.Services.Api.Brokers.Storages;
 using MakeYourCake.Services.Api.Models.Customers;
 using MakeYourCake.Services.Api.Services.Foundations.Customers;
@@ -14,6 +17,8 @@ namespace MakeYourCake.Services.Tests.Unit.Services.Foundations.Customers
     public partial class CustomerServiceTests
     {
         private readonly Mock<IStorageBroker> storageBrokerMock;
+        private readonly Mock<ILoggingBroker> loggingBrokerMock;
+        private readonly Mock<IDateTimeBroker> dateTimeBrokerMock;
         private readonly ICustomerService customerService;
 
         public CustomerServiceTests()
@@ -38,6 +43,13 @@ namespace MakeYourCake.Services.Tests.Unit.Services.Foundations.Customers
                 .OnType<DateTimeOffset>().Use(dateTime);
 
             return filler;
+        }
+
+        private static Expression<Func<Exception, bool>> SameExceptionAs(Exception expectedException)
+        { 
+            return actualException =>
+                actualException.Message == expectedException.Message
+                && actualException.InnerException.Message == expectedException.InnerException.Message;
         }
     }
 }
